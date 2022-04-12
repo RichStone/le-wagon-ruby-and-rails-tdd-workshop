@@ -1,2 +1,1 @@
-require "minitest/autorun"
-require "./check"
+require_relative "./check"

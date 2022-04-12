@@ -1,8 +1,8 @@
 require_relative "./check"
 require_relative "./hello_tdd_world"
 
-class HelloTddWorldTest < Minitest::Test
-  def test_returns_hello_tdd_world
-    Check.is_equal?(HelloTddWorld.generic, "Hello, TDD World!")
+class HelloTddWorldTest < Check
+  def check_returns_generic_hello_tdd_world
+    is_equal?(HelloTddWorld.generic, "Hello, TDD World!")
   end
 end
