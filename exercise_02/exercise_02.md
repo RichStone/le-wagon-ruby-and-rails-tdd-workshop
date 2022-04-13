@@ -60,7 +60,14 @@ _Hints:_
   like `self.personalized(name)`. Still, try to get the test green with the
   expected value hardcoded. Only then refactor.
 
-**Dig deeper ⛏**
+---
+
+Awesome, we did our first test-drive 🎉 Our bot is growing quickly which brings
+new challenges! Let's see how we can tackle them in the next exercise.
+
+---
+
+**(Bonus) Just a little cooldown...**
 
 There's a new requirement... 😱
 

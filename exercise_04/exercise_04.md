@@ -1,10 +1,8 @@
 # Add a new feature with TDD
 
 
-Co-Creation app setup with
-
-- sqlite
-- simplecss
-- Cocreator model name:"Rich", available_for:"programming", available_from:timestamp, available_to:timestamp
+HelloTddWorld as a resource.
 
 requests spec happy path
+
+**(Bonus) Package your bot as a gem**

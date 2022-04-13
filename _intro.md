@@ -7,10 +7,10 @@
 
 * Testing and TDD is a powerful USP early in your career
 
-* You get less stuck because now coding is a structured process
+* You get less stuck because now coding becomes more of a structured process
 
-* Your code becomes more reliable and more readable because you think of the bad
-  cases **before** you write the actual code
+* Your code becomes more reliable and more readable because you think of the
+  error and edge cases **before** you write the actual code
 
 * Once a big chunk of your is tested, refactoring becomes an enjoyable process
   instead of a fearful event where all of your code breaks down
