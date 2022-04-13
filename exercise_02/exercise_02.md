@@ -76,7 +76,8 @@ In this exercise we'll just add a new method that returns 3 greetings:
 ]
 ```
 
-Follow the same `Red - Green - Refactor` process as before.
+Follow the same `Red - Green - Refactor` process as before. Think of a good
+method name.
 
 In one of the next "Dig deeper ⛏" exercises you will do more advanced stuff with
 it.
