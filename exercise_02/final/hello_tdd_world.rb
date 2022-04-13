@@ -1,5 +1,5 @@
 class HelloTddWorld
-  def self.generic
+  def self.default
     "Hello, TDD World!"
   end
 end
