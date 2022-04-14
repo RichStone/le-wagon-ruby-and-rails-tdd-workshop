@@ -33,7 +33,29 @@ Inside of the `exercise_03/start/hello_tdd_world_test.rb` file...
   because `"minitest/autorun"` is available globally instead of being a relative
   file)
 
-- [ ] ...
+- [ ] Your test class should now inherit from `Minitest::Test`
+
+- [ ] Replace all `is_equal?` references by Minitest's `assert_equal`
+
+- [ ] Replace all Check's test method name prefixes (`def check_`) by Minitest's
+`test_` prefix.
+
+- [ ] Run the tests! You should have an output like this:
+
+```shell
+$ ruby exercise_03/final/hello_tdd_world_test.rb
+Run options: --seed 61536
+
+# Running:
+
+...
+
+Finished in 0.000631s, 4754.3581 runs/s, 6339.1442 assertions/s.
+3 runs, 4 assertions, 0 failures, 0 errors, 0 skips
+```
+
+You've successfully replaced your own test framework with the powerful Minitest!
+🏎
 
 **Leverage new requirement with Minitest**
 
