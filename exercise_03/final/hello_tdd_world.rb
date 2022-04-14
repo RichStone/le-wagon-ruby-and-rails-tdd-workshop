@@ -14,4 +14,18 @@ class HelloTddWorld
       "I came in red, I saw green, I refactored. - Julius Cesar"
     ]
   end
+
+  private
+
+    def initialize(phrase)
+      @custom_phrase = phrase
+    end
+
+  public
+
+    attr_accessor :custom_phrase
+
+    def puts_custom_phrase
+      puts custom_phrase
+    end
 end

@@ -20,4 +20,19 @@ class HelloTddWorldTest < Minitest::Test
 
     assert_equal(expected_phrases, HelloTddWorld.fun_phrases)
   end
+
+  def test_returns_configurable_custom_phrase
+    phrase = "Custom TDD phrase"
+    assert_equal "Custom TDD phrase", HelloTddWorld.new(phrase).custom_phrase
+
+    bot = HelloTddWorld.new("Another Custom TDD phrase")
+    assert_equal "Another Custom TDD phrase", bot.custom_phrase
+
+    bot.custom_phrase = "Changed existing TDD phrase"
+    assert_equal "Changed existing TDD phrase", bot.custom_phrase
+  end
+
+  def test_puts_custom_phrase
+    assert_output(/TDD phrase/) { HelloTddWorld.new("TDD phrase").puts_custom_phrase }
+  end
 end
