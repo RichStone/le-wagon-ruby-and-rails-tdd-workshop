@@ -6,8 +6,8 @@ waiting for.
 TDD is a methodology for a structured coding process that consists of 3 steps:
 
 1. Write a failing test
-2. Make it pass in the easiest possible way
-3. Refactor to remove duplication
+2. Make it pass in the **stupidest possible way**
+3. Refactor to improve your program and "remove duplication"
 
 Or even shorter:
 
@@ -15,16 +15,22 @@ Or even shorter:
 2. Green
 3. Refactor
 
-Let's practice this on a real scenario.
+![image](../images/red-green-refactor.png)
+
+Let's practice this on a real scenario. Each step is important. Don't skip
+steps, especially when you just learn it. Sometimes
 
 **Requirement:**
 
 > In our organization we'd like to do more TDD again. Let's create a friendly
-TDD bot that greets people in our Slack's #tdd-channel. 🚀
+TDD bot who greets people in our Slack's #tdd-channel. 🚀
 
 You get assigned a small first ticket to get this TDD bot going. Your code buddy
 at work who created the ticket was so kind to chunk it up in tiny steps to also
 get you started with TDD:
+
+(inside `exercise_02/start/` you are starting this exercise with a ready-to-go
+version of our `Check` test framework)
 
 - [ ] Create a `HelloTddWorldTest` class that inherits from our test framework
   `Check` inside of `hello_tdd_world_test.rb`
@@ -51,6 +57,8 @@ Follow the same steps above but this time there is a new requirement:
 > #tdd-channel for the first time with a personalized message: "Hello
 > FIRST_TIME_POSTER_NAME, TDD superstar!". So if Mary posts for the first time,
 > the Slack bot will greet her with "Hello Mary, TDD superstar!".
+
+Remember 🛑 - 🟢 - 🔄[refactor]
 
 _Hints:_
 
@@ -86,5 +94,4 @@ In this exercise we'll just add a new method that returns 3 greetings:
 Follow the same `Red - Green - Refactor` process as before. Think of a good
 method name.
 
-In one of the next "Dig deeper ⛏" exercises you will do more advanced stuff with
-it.
+In one of the next Bonus tasks you will do more advanced stuff with it.

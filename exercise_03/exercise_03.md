@@ -5,12 +5,12 @@ different part of your organization. Everyone loves it so far!
 
 However, other developers now want to build on top of it. That's not that easy,
 though, cause your new test framework is not well documented, not feature-rich,
-and you obviously don't have enough time among all of all your responsibilities
-to keep developing it... 😬
+and you obviously don't have enough time among all your responsibilities to keep
+developing it... 😬
 
 With all that data, you make a new decision: Let's not insist on the `Check`
 framework for now, you can always continue the work on it later. Let's switch to
-Minitest for now instead 🤖
+Minitest for now instead.
 
 You first have a quick skim over what Minitest actually is:
 
@@ -60,7 +60,8 @@ Which means that:
 * 4 assertions inside the tests ran without failures or errors
 
 You've successfully replaced your own test framework with the powerful Minitest!
-🏎
+🏎 Now you've also seen how cool it is to refactor something that's already
+tested.
 
 **Leverage new requirement with Minitest**
 
@@ -70,9 +71,11 @@ output a custom TDD slogan on his Rails app staging server.
 > Make your TDD class easy to use for a custom input that then can be used in
 > two ways: A `puts` statement and in some places a simple return.
 
+Let's do some TDD again! `🛑 - 🟢 - 🔄`
+
 - [ ] Your bot now will have custom inputs, this means it will have a **state**.
 Until now we only had class methods for your bot, but to handle state it might
-be time to create objects from your. Start writing your test by just
+be time to create objects from your class. Start writing your test by just
 initializing your object and keep it as simple as possible. This could be the
 simplest possible test for this case:
 
@@ -82,14 +85,30 @@ bot = HelloTddWorld.new
 assert_equal "Custom TDD phrase", bot.custom_phrase
 ```
 
-- [ ] Make it green in the most simple way.
+**Working your code out in tiny steps is another crucial aspect of TDD.**
 
-- [ ] Refactor to remove duplication
+- [ ] Make it green in the most simple way. Hardcode the "Custom TDD phrase"
+  value first.
 
-- [ ] Now we also want to spit out the custom phrase onto the app logs, or to be more precise, to the STDIN. Checkout `assert_output` in the [Minitest assertion docs][assertion docs]
+- [ ] Refactor to remove duplication. Hint: You could add a second assertion to
+  your test to drive this, e.g.:
 
-- [ ] Write another test for `def test_puts_custom_phrase` to make sure the custom phrase
-gets put out to STDIN via Ruby's `puts` method
+```ruby
+bot = HelloTddWorld.new
+assert_equal "Custom TDD phrase", bot.custom_phrase
+assert_equal "Another TDD phrase", bot.custom_phrase
+```
+
+This will obviously fail now. Make it pass with your refactoring ;)
+
+_**assert a puts method**_
+
+- [ ] Now we also want to spit out the custom phrase onto the app logs, or to be
+  more precise, to the STDIN. Checkout `assert_output` in the [Minitest
+  assertion docs][assertion docs]
+
+- [ ] Write another test for `def test_puts_custom_phrase` to make sure the
+custom phrase gets put out to STDIN via Ruby's `puts` method
 
 Imagine to implement something like `assert_output` in your `Check` framework 🙈
 Good to have a powerful framework like Minitest as a rescue now 🙏
