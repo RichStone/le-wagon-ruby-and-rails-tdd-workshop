@@ -6,7 +6,7 @@ waiting for.
 TDD is a methodology for a structured coding process that consists of 3 steps:
 
 1. Write a failing test
-2. Make it pass in the **stupidest possible way**
+2. Make it pass in the **simplest possible way**
 3. Refactor to improve your program and "remove duplication"
 
 Or even shorter:

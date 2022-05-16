@@ -12,9 +12,9 @@ Thanks Philipp, it certainly did!
 
 * Ruby installed
 
-* Rails installed
+* Rails
 
-The workshop starts with pure Ruby and ends with a Rails exercise. Shouldn't
+The workshop starts with pure Ruby and ends with a Rails exercise. It shouldn't
 really matter which versions you have installed, the features we'll be using are
 standard across the latest versions.
 
@@ -22,7 +22,7 @@ standard across the latest versions.
 
 ```shell
 $ git clone git@github.com:RichStone/le-wagon-ruby-and-rails-tdd-workshop.git
-$ cd le-wagon-tdd-workshop
+$ cd le-wagon-ruby-and-rails-tdd-workshop
 $ code . # Or open with Your favorite editor.
 ```
 

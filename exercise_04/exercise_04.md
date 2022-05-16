@@ -1,3 +1,4 @@
+# This exercise is something for a longer workshop: WIP
 # Test-Drive a Rails App
 
 You will be using what I call Behavior-Driven Design (BDD) guided by TDD.
